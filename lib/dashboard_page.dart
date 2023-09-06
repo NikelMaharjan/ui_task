@@ -29,7 +29,6 @@ class _DashBoardPageState extends State<DashBoardPage> {
         bottomNavigationBar: SizedBox(
           height: 100,
           child: BottomNavigationBar(
-
             elevation: 20,
             selectedItemColor: AppColor.purple,
             unselectedItemColor: AppColor.grey,
