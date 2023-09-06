@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intern_task/common/app_bar.dart';
 import 'package:intern_task/constants/color.dart';
 import 'package:intern_task/constants/font.dart';
@@ -9,6 +8,7 @@ import 'package:intern_task/models/outlines.dart';
 import 'package:intern_task/models/services.dart';
 
 class ServicePage extends StatefulWidget {
+  const ServicePage({super.key});
 
   @override
   State<ServicePage> createState() => _ServicePageState();
@@ -32,10 +32,9 @@ class _ServicePageState extends State<ServicePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                  Text(
                   "Hello, Suvaye Tech",
-                  style: AppFont.hello,
+                  style: AppFont.helloFont,
                 ),
 
                 Sizes.gahH25,
@@ -76,16 +75,13 @@ class _ServicePageState extends State<ServicePage> {
                   child: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 18.0),
                         child: Image.asset(e.icon),
                       ),
-
                       // SvgPicture.asset(
                       //   e.svgIcon
                       // ),
-
                       Text(e.text, style: AppFont.medium.copyWith(fontWeight: FontWeight.w600),),
                     ],
                   ),

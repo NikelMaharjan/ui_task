@@ -25,9 +25,4 @@ List<Services> services  = [
       description: "Develop beautiful fast desktop applications"
   ),
 
-
-
-
-
-
 ];

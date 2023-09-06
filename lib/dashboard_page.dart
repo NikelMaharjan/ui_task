@@ -1,30 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intern_task/Dashboard/service_page.dart';
-import 'package:intern_task/common/app_bar.dart';
 import 'package:intern_task/constants/color.dart';
-import 'package:intern_task/constants/font.dart';
-import 'package:intern_task/constants/gap.dart';
-import 'package:intern_task/models/outlines.dart';
-import 'package:intern_task/models/services.dart';
+
 
 class DashBoardPage extends StatefulWidget {
+  const DashBoardPage({super.key});
+
 
   @override
   State<DashBoardPage> createState() => _DashBoardPageState();
 }
 
 
-
 class _DashBoardPageState extends State<DashBoardPage> {
 
   int currentIndex = 1;
-
   final screens  = [
-
     const Center(child: Text("Empty"),),
-    ServicePage(),
+    const ServicePage(),
     const Center(child: Text("Empty"),),
     const Center(child: Text("Empty"),),
   ];
@@ -57,10 +50,6 @@ class _DashBoardPageState extends State<DashBoardPage> {
         body: screens[currentIndex]
     );
   }
-
-
-
-
 
   BottomNavigationBarItem _buildBottomNavigationBarItem({required String label, required String icon}) {
     return BottomNavigationBarItem(

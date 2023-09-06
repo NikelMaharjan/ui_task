@@ -15,7 +15,6 @@ class AppColor {
   static Color green =  const Color(0xff027A48);
   static Color hues =  const Color(0xff371B34);
 
-
   static Color grid1Color =  const Color(0xffF9F5FF);
   static Color grid2Color =  const Color(0xffFDF2FA);
   static Color grid3Color =  const Color(0xffFFFAF5);

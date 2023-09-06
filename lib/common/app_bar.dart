@@ -1,28 +1,15 @@
-
-
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 
 class AppBarWidget {
   static getAppBar() {
    return AppBar(
      backgroundColor: Colors.white,
      elevation: 0,
-     title:  Text("Suvaye"),
+     title:  const Text("Suvaye"),
      leading: Padding(
        padding: const EdgeInsets.only(left: 20.0),
-       child:
-
-           // SvgPicture.asset(
-           //     'assets/svg/logo.svg',
-           //     semanticsLabel: 'A red up arrow
-           // ),
-
-       Image.asset(
+       child: Image.asset(
          'assets/png/logo.png',
        ),
      ),

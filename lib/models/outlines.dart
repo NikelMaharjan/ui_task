@@ -10,8 +10,6 @@ class Outline {
   final String icon;
   final String svgIcon;
   final Color color;
-
-
   Outline({required this.text, required this.icon, required this.color, required this.svgIcon});
 
 }
@@ -40,7 +38,6 @@ List<Outline> outlines  = [
       color: AppColor.grid3Color,
       svgIcon: "assets/svg/design.svg",
 
-
   ),
 
   Outline(
@@ -48,7 +45,6 @@ List<Outline> outlines  = [
       icon: 'assets/png/consultant.png',
       color: AppColor.grid4Color,
       svgIcon: "assets/svg/consultant.svg",
-
 
   ),
 
